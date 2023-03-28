@@ -1,0 +1,569 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color-primary: #F15156;
+  --bg-color-secondary: #E44449;
+  --bg-card-section: hsla(356, 81%, 96%, 0.5);
+  --bg-about-section: #FFFFFF;
+  
+  --tc-primary: #FFFFFF;
+  --tc-secondary: #0D3B66;
+  --tc-card-section: hsla(0, 0%, 0%, 1);
+  
+  --btn-color-off: #FFFFFF; 
+  --btn-color-on: #d4d4d4; 
+
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+body, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+section {    
+  margin: 0 auto;
+  max-width: 68rem;    
+  position: relative;
+}
+
+strong {
+  font-weight: 800;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+header {
+  padding: 2rem;
+  width: 100%;
+  height: 8rem;
+  background-color: var(--bg-color-secondary);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 100;
+  position: relative;
+}
+
+.opened {
+  transform: translateY(38rem);
+  transition: transform .5s;
+}
+
+button {
+  border: none;
+  background-color: var(--btn-color-off);
+  border-radius: .8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+button.menu {
+  width: 4rem;
+  height: 4rem;
+}
+
+nav {
+  position: absolute;
+  background-color: var(--bg-color-secondary);
+  width: 100%;
+
+  border-radius: 0 0 2rem 2rem;
+  padding: 0 2rem 2.8rem;
+
+  top: -30rem;
+  z-index: 100;
+}
+
+.line {
+  margin-top: 5px;
+  width: 100%;
+  height: 0px;   
+  opacity: 0.2;
+  border: 1px solid var(--tc-primary);
+}
+
+ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 2.7rem;
+}
+
+li a {
+  text-decoration: none;
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+
+  color: var(--tc-primary);
+  opacity: 0.5;
+}
+
+li a:hover {
+  opacity: 1;
+  transition: .7s;
+  font-weight: 700;
+}
+
+/* MAIN CONTENT */
+
+body {
+  background: var(--bg-color-primary);
+  color: var(--tc-primary);
+}
+
+.friends {
+  margin: 5.2rem 2rem 3.5rem;
+}
+
+.images img {
+  margin-right: -1.3rem;
+
+  border-radius: 50%;
+  border: 3px solid var(--bg-color-primary);
+
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.main-content h1 {
+  max-width: 27rem;
+  margin: 0 2rem;
+}
+
+.main-subtitle {
+  display: none;
+}
+
+.hero {
+  margin-top: 3.3rem;
+
+  width: 100%;
+  max-width: 68rem;
+  height: 28rem;
+
+  display: grid;
+  place-items: end center;
+  
+  background-image: url(./assets/callAction-Mobile.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.hero button {
+  position: absolute;
+  
+  width: 24rem;
+  height: 5.5rem;
+
+  border-radius: 9px;
+  margin-bottom: 2rem;
+
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: var(--tc-secondary);
+
+  transition: background .5s;
+}
+
+.hero button:hover {
+  background: var(--btn-color-on);
+}
+
+/* About Section */
+
+
+
+#about {
+  background-color: var(--bg-about-section);
+  max-width: 68rem;    
+  position: relative;
+}
+
+.container {
+  padding: 7rem 2rem 0;
+}
+
+.container h1 {
+  color: var(--tc-secondary);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  padding: 3rem 6.7rem 3rem 3rem;
+
+  background-color: var(--bg-card-section);
+  border: 1px solid rgba(241, 81, 86, 0.3);
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card p:first-of-type {
+  font-size: 3rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  line-height: 110%;
+  color: var(--tc-card-section);
+}
+
+.appImage-wrapper {
+  position: relative;
+  margin: 3.6rem auto 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app-bg {
+  margin-top: 3rem;
+  background-color: var(--bg-card-section);
+  border-radius: 20px;
+  height: 28.4rem;
+  width: 100%;
+}
+
+#ImgApp-Mobile {
+  position: absolute;
+  max-width: 58.5rem;  
+  width: 130%;
+}
+
+#ImgApp-Desktop {
+  display: none;
+}
+
+/* Tablet Version */
+
+@media (min-width: 681px) {
+
+  section {
+    max-width: 108vw;
+  }
+  
+  #home {
+    max-width: 100vw;
+    max-width: 108rem;
+    padding-bottom: 0;
+    height: 90rem;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    
+    padding: 3rem 0 0 3rem;
+    height: 79rem;
+    position: relative;
+  }
+
+  .friends {
+    margin: 5.2rem 0 3.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+  }
+
+  .images img {
+    border: 3px solid var(--bg-color-primary);
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .main-content h1 {
+    max-width: 52rem;
+    margin: 7rem 0 0;
+    font-size: 4.5rem;
+    width: 55%;
+  }
+
+  .main-subtitle {
+    display: block;
+
+    margin-top: 8rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    width: 55%;
+  }
+
+  .hero {
+    margin-top: 0;
+
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    max-height: 79rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: end left;
+
+    background-image: url(./assets/callAction-Desktop.png);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  .hero button {
+    position: absolute;
+    bottom: 6.4rem;
+    width: 83%;
+    max-width: 50rem;
+    height: 7.2rem;
+    margin: 0 4rem 5rem;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  #about {
+    width: 100vw;
+    max-width: 108rem;   
+  }
+
+  .container {
+    margin: 2rem 2rem 0 0;
+    padding: 8rem 2rem 2rem
+  }
+
+  .card-wrapper {
+    margin-top: 2rem;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+    padding: 0;
+  }
+  .last {
+    grid-column: span 2;
+  }
+
+  .appImage-wrapper {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+
+  #home {
+    max-width: 144rem;
+    height: 98.5rem;
+  }
+
+  header {
+    top: 0;
+    max-width: 144rem;
+    height: 16.5rem;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    background-color: var(--bg-color-primary);
+    position: relative;
+    display: block;
+  }
+
+  #logo img {
+    width: 17.7rem;
+    margin-top: 4rem;
+    margin-left: 11.2rem;
+  }
+
+  button.menu {
+    display: none;
+    visibility: hidden;
+  }
+
+  nav {
+    position: absolute;
+    background-color: transparent;
+
+    max-width: 77.1rem;
+    height: auto;
+
+    border-radius: 0px;
+    padding: 0 ;
+
+    top: 0;
+    left: auto;
+    right: 5.2rem;
+    z-index: 100;
+
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  ul {
+    height: auto;
+    padding-top: 6rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li a{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 110%;
+  }
+
+  .main-content {
+    padding: 3rem 0 0 11.2rem;
+  }
+
+  .friends {
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .images {
+    width: fit-content;
+  }
+
+  .main-content h1 {
+    font-size: 6.2rem;
+    width: 80%;
+  }
+
+  .main-subtitle {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    max-width: 40.7rem;
+    width: 100%;
+  }
+
+  #about {
+    width: 100vw;
+    max-width: 144rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5.6rem;
+
+    overflow: hidden;
+    padding: 0 11.2rem 0 2rem;
+  }
+
+  .container {
+    max-width: 47%;
+    margin-top: 13.4rem;
+
+    padding: 0;
+  }
+
+  .container h1 {
+    font-size: 4.8rem;
+    max-width: 54rem;
+  }
+
+  .card-wrapper {
+    margin-top: 4rem;
+    margin-bottom: 13.4rem;
+    
+    padding: 0;
+  }
+
+  .card {
+    padding: 3rem;
+    gap: 3.5rem;
+  }
+
+  .appImage-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 47%;
+    height: 78.5rem;
+  }
+
+  .app-bg {
+    border-radius: 2rem;
+    width: 58.5rem;
+    margin-top: 2.7rem;
+  }
+
+  #ImgApp-Mobile {
+    display: none;
+  }
+
+  #ImgApp-Desktop {
+    display: block;
+    position: absolute;
+    max-width: 58.5rem;
+    top: 8.7rem;
+  }
+}
+
+@media (min-width: 1361px) {
+
+  #home {
+    min-width: 100vw;
+  }
+
+  #about {
+    min-width: 100vw;
+  }
+
+  nav {
+    left: auto;
+    right: 9.5rem;
+  }
+
+}
+
