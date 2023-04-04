@@ -12,6 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   
   <script src="./script.js" defer></script>
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></script>
 </head>
 <body>
 
@@ -98,4 +104,58 @@
       <img src="./assets/ImgApp-Mobile.png" alt="" id="ImgApp-Mobile">
     </div>
   </section>
+
+  <section id="manyFriends">
+    <div class="background">
+
+      <div class="friends-content">
+        <h1 class="title">Há muitos amigos esperando por você!</h1>
+        <p>
+          O FiendAFriend conecta pessoas que estão procurando por um animal de estimação com animais que precisam de um lar amoroso. É fácil de usar e você pode navegar por uma variedade de animais para encontrar aquele que melhor se adapta ao seu estilo de vida e necessidades.
+        </p>
+        <button>Acesse agora</button>
+        <div class="swiper-div">
+  
+          <div class="swiper">
+            
+  
+            <div class="swiper-wrapper">
+              <div class="swiper-slide teste">
+                <img src="./assets/HamiltonImg.png" alt="">
+                <p>Hamilton</p>
+              </div>
+              <div class="swiper-slide teste">
+                <img src="./assets/CleitonImg.png" alt="">
+                <p>Cleiton</p>
+              </div>
+              <div class="swiper-slide teste">
+                <img src="./assets/AldoImg.png" alt="">
+                <p>Aldo</p>
+              </div>
+            </div>
+          
+          </div>
+  
+            <div class="swiper-button-prev" id="prev">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            </div>
+            <div class="swiper-button-next" id="next">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>              
+                
+            </div>
+          
+          <div class="swiper-pagination" id="dot"></div> 
+        </div>
+      </div>
+
+      
+    </div>
+
+  </section>
+
 </body>

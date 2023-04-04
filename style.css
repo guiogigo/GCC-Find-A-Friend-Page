@@ -17,7 +17,8 @@
   --tc-primary: #FFFFFF;
   --tc-secondary: #0D3B66;
   --tc-card-section: hsla(0, 0%, 0%, 1);
-  
+  --tc-friends-section: hsla(47, 87%, 66%, 1);
+
   --btn-color-off: #FFFFFF; 
   --btn-color-on: #d4d4d4; 
 
@@ -137,7 +138,7 @@ li a:hover {
   font-weight: 700;
 }
 
-/* MAIN CONTENT */
+/* Main Section */
 
 body {
   background: var(--bg-color-primary);
@@ -206,8 +207,6 @@ body {
 
 /* About Section */
 
-
-
 #about {
   background-color: var(--bg-about-section);
   max-width: 68rem;    
@@ -275,6 +274,106 @@ body {
 }
 
 #ImgApp-Desktop {
+  display: none;
+}
+
+/* Many Friends Section */
+
+#manyFriends {
+  background-color: var(--bg-about-section);
+  max-width: 68rem;    
+  position: relative;
+  padding: 2rem;
+}
+
+.background {
+  background-color: var(--bg-color-primary);
+  border-radius: 2rem;
+  padding: 6rem 3.2rem;
+}
+
+.friends-content h1 {
+  color: var(--tc-friends-section);
+  font-size: 3rem;
+  line-height: 90%;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.friends-content p {
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+
+  margin: 4rem 0 2rem;
+}
+
+.friends-content button {
+  margin-bottom: 3.2rem;
+  width: 100%;
+  padding: 1.8rem;
+
+  background: var(--btn-color-off);
+  border-radius: 8px;
+
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--tc-secondary);
+
+  transition: background .5s;
+}
+
+.friends-content button:hover {
+  background: var(--btn-color-on);
+}
+
+.swiper {
+  width: 21.4rem;
+
+}
+
+.teste {
+  background-color: var(--bg-about-section);
+  border-radius: 18.2857px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.teste img {
+  max-height: 12.8rem;
+  max-width: 100%;
+
+  text-align: center;
+}
+
+.teste p {
+  font-size: 1.6rem;
+  line-height: 120%;
+  text-align: center;
+  color: var(--tc-secondary);
+
+  margin: 1.4rem auto;
+}
+
+#dot {
+  position: inherit;
+  margin-top: 1rem;
+}
+
+.swiper-div .swiper-pagination-bullet-active {
+  background: var(--btn-color-off);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after,
+#prev,
+#next {
   display: none;
 }
 
@@ -388,6 +487,100 @@ body {
 
   .appImage-wrapper {
     margin: 0;
+  }
+
+  #manyFriends {
+    max-width: 108rem;    
+  }
+
+  .friends-content p {
+    max-width: 60rem;
+    text-align: center;
+    margin: 4rem auto 2rem;
+  }
+
+  .friends-content button {
+    margin: 0 auto 3.2rem;
+    max-width: 60rem;
+  }
+
+  .friends-content button:hover {
+    background: var(--btn-color-on);
+  }
+
+  .swiper {
+    width: 38.4rem;
+
+  }
+
+  .teste {
+    border-radius: 27.4286px;
+  }
+
+
+  .teste img {
+    min-height: 19.2rem;
+    min-width: 100%;
+
+    text-align: center;
+  }
+
+  .teste p {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 2rem auto;
+  }
+
+  #dot {
+    margin-top: 2.5rem;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-div {
+    margin: 0 auto;
+    max-width: 60rem;
+
+    position: relative;
+  }
+
+  .swiper-div .swiper-button-next,
+  .swiper-div .swiper-button-prev {
+    width: 7.2rem;
+    height: 7.2rem;
+
+    padding: 2.4rem;
+    margin: 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 1.5rem;
+  }
+
+  #prev,
+  #next {
+    display: block;
+  } 
+
+  .swiper-div .swiper-button-next {
+    position: absolute;
+    top: 9rem;
+  }
+
+  .swiper-div .swiper-button-prev {
+    position: absolute;
+    top: 9rem;
+  }
+
+  .swiper-div .swiper-button-next:hover,
+  .swiper-div .swiper-button-prev:hover {
+    background: var(--btn-color-off);
+  }
+
+  .swiper-div .swiper-button-next:hover svg path,
+  .swiper-div .swiper-button-prev:hover svg path {
+    stroke: hsla(0, 0%, 0%, 1);
   }
 }
 
@@ -548,6 +741,74 @@ body {
     max-width: 58.5rem;
     top: 8.7rem;
   }
+
+  #manyFriends {
+    width: 100vw;
+    max-width: 144rem;    
+  }
+
+  .background {
+    height: 62.8rem;
+
+    padding: 10rem 10.4rem 7rem;
+  }
+
+  .friends-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 60rem;
+    grid-template-rows: auto 30rem;
+  }
+
+  .friends-content h1 {
+    font-size: 4.8rem;
+    line-height: 90%;
+    
+
+    text-align: start;
+    max-width: 44rem;
+  }
+
+  .swiper-div {
+    align-self: center;
+  }
+
+
+  .friends-content p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+
+    max-width: 60rem;
+    text-align: start;
+    margin: 0 0 5rem 10.5rem;
+  }
+
+  .friends-content button {
+    width: 23rem;
+    height: 7.2rem;
+    border-radius: 2rem;
+
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 3.4rem;
+
+    padding: 2rem 5rem;
+    margin: 9rem 0 0;
+  }
+
+  .swiper-div {
+    width: 60rem;
+  }
+
+  .teste p {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 2rem auto;
+
+    text-align: center;
+  }
 }
 
 @media (min-width: 1361px) {
@@ -565,5 +826,9 @@ body {
     right: 9.5rem;
   }
 
+  #manyFriends {
+    min-width: 100vw;
+    padding: 2rem 11.2rem;
+  }
 }
 
