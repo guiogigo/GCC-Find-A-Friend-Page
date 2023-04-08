@@ -8,7 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Find a Friend</title>
-  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/desktop.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   
   <script src="./script.js" defer></script>
@@ -41,9 +45,9 @@
       <nav id="navigation">
         <div class="line"></div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre o app</a></li>
-          <li><a href="#">Animais disponíveis</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre o app</a></li>
+          <li><a href="#manyFriends">Animais disponíveis</a></li>
           <li><a href="#">Sobre a FindAFriend</a></li>
           <li><a href="#">Contato</a></li>
         </ul>
@@ -117,23 +121,20 @@
         <div class="swiper-div">
   
           <div class="swiper">
-            
-  
             <div class="swiper-wrapper">
-              <div class="swiper-slide teste">
+              <div class="swiper-slide swiper-style">
                 <img src="./assets/HamiltonImg.png" alt="">
                 <p>Hamilton</p>
               </div>
-              <div class="swiper-slide teste">
+              <div class="swiper-slide swiper-style">
                 <img src="./assets/CleitonImg.png" alt="">
                 <p>Cleiton</p>
               </div>
-              <div class="swiper-slide teste">
+              <div class="swiper-slide swiper-style">
                 <img src="./assets/AldoImg.png" alt="">
                 <p>Aldo</p>
               </div>
             </div>
-          
           </div>
   
             <div class="swiper-button-prev" id="prev">
@@ -153,9 +154,84 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <section id="aboutTeam">
+    
+    <div id="tittle-content">
+      <h1>Sobre a <br> Find A Friend</h1>
+      <p class="description">
+        A FindAFriend acredita que todo bichinho merece uma vida confortável e segura. Por isso, cria soluções que ajudam ONGs e entidades protetoras a conectar pessoas adotantes e animais resgatados. 
+      </p>
+   </div>
+
+    <div class="teamSwiper-div">
+
+      <div class="teamSwiper Mobile">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide teamSwiper-style">
+            <img src="./assets/HamiltoFreire.png" alt="">
+            <p>Hamilton Freire</p>
+            <span>Fundador</span>
+          </div>
+          <div class="swiper-slide teamSwiper-style">
+            <img src="./assets/LaraValencia.png" alt="">
+            <p>Lara Valencia</p>
+            <span>Fundadora</span>
+          </div>
+          <div class="swiper-slide teamSwiper-style">
+            <img src="./assets/AlineAlana.png" alt="">
+            <p>Aline Alana</p>
+            <span>UI/UX Designer</span>
+          </div>
+          <div class="swiper-slide teamSwiper-style">
+            <img src="./assets/TadeuBastos.png" alt="">
+            <p>Tadeu Bastos</p>
+            <span>Full Stack Developer</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="teamSwiper Desktop">
+        <div class="teamSwiper-style">
+          <img src="./assets/HamiltoFreire.png" alt="">
+          <p>Hamilton Freire</p>
+          <span>Fundador</span>
+        </div>
+        <div class="teamSwiper-style">
+          <img src="./assets/LaraValencia.png" alt="">
+          <p>Lara Valencia</p>
+          <span>Fundadora</span>
+        </div>
+        <div class="teamSwiper-style">
+          <img src="./assets/AlineAlana.png" alt="">
+          <p>Aline Alana</p>
+          <span>UI/UX Designer</span>
+        </div>
+        <div class="teamSwiper-style">
+          <img src="./assets/TadeuBastos.png" alt="">
+          <p>Tadeu Bastos</p>
+          <span>Full Stack Developer</span>
+        </div>
+      </div>
+
+      <div class="teamSwiper-button-prev" id="teamPrev">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#0D3B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+      </div>
+      <div class="teamSwiper-button-next" id="teamNext">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 6L15 12L9 18" stroke="#0D3B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>              
+          
+      </div>
       
+      <div class="teamSwiper-pagination" id="teamDot"></div> 
     </div>
 
   </section>
-
 </body>

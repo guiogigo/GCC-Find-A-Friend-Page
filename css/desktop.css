@@ -1,0 +1,309 @@
+@media (min-width: 1080px) {
+
+  #home {
+    max-width: 144rem;
+    height: 98.5rem;
+  }
+
+  header {
+    top: 0;
+    max-width: 144rem;
+    height: 16.5rem;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    background-color: var(--bg-color-primary);
+    position: relative;
+    display: block;
+  }
+
+  #logo img {
+    width: 17.7rem;
+    margin-top: 4rem;
+    margin-left: 11.2rem;
+  }
+
+  button.menu {
+    display: none;
+    visibility: hidden;
+  }
+
+  nav {
+    position: absolute;
+    background-color: transparent;
+
+    max-width: 77.1rem;
+    height: auto;
+
+    border-radius: 0px;
+    padding: 0 ;
+
+    top: 0;
+    left: auto;
+    right: 5.2rem;
+    z-index: 100;
+
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  ul {
+    height: auto;
+    padding-top: 6rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li a{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 110%;
+  }
+
+  .main-content {
+    padding: 3rem 0 0 11.2rem;
+  }
+
+  .friends {
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .images {
+    width: fit-content;
+  }
+
+  .main-content h1 {
+    font-size: 6.2rem;
+    width: 80%;
+  }
+
+  .main-subtitle {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    max-width: 40.7rem;
+    width: 100%;
+  }
+
+  #about {
+    width: 100vw;
+    max-width: 144rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5.6rem;
+
+    overflow: hidden;
+    padding: 0 11.2rem 0 2rem;
+  }
+
+  .container {
+    max-width: 47%;
+    margin-top: 13.4rem;
+
+    padding: 0;
+  }
+
+  .container h1 {
+    font-size: 4.8rem;
+    max-width: 54rem;
+  }
+
+  .card-wrapper {
+    margin-top: 4rem;
+    margin-bottom: 13.4rem;
+    
+    padding: 0;
+  }
+
+  .card {
+    padding: 3rem;
+    gap: 3.5rem;
+  }
+
+  .appImage-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 47%;
+    height: 78.5rem;
+  }
+
+  .app-bg {
+    border-radius: 2rem;
+    width: 58.5rem;
+    margin-top: 2.7rem;
+  }
+
+  #ImgApp-Mobile {
+    display: none;
+  }
+
+  #ImgApp-Desktop {
+    display: block;
+    position: absolute;
+    max-width: 58.5rem;
+    top: 8.7rem;
+  }
+
+  #manyFriends {
+    width: 100vw;
+    max-width: 144rem;    
+  }
+
+  .background {
+    height: 62.8rem;
+
+    padding: 10rem 10.4rem 7rem;
+  }
+
+  .friends-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 60rem;
+    grid-template-rows: auto 30rem;
+  }
+
+  .friends-content h1 {
+    font-size: 4.8rem;
+    line-height: 90%;
+    
+
+    text-align: start;
+    max-width: 44rem;
+  }
+
+  .swiper-div {
+    align-self: center;
+  }
+
+
+  .friends-content p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+
+    max-width: 60rem;
+    text-align: start;
+    margin: 0 0 5rem 10.5rem;
+  }
+
+  .friends-content button {
+    width: 23rem;
+    height: 7.2rem;
+    border-radius: 2rem;
+
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 3.4rem;
+
+    padding: 2rem 5rem;
+    margin: 9rem 0 0;
+  }
+
+  .swiper-div {
+    width: 60rem;
+  }
+
+  .swiper-style p {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 2rem auto;
+
+    text-align: center;
+  }
+
+  #aboutTeam {
+    width: 100vw;
+    max-width: 144rem;   
+
+    padding: 7rem 11.2rem;
+  }
+
+  #tittle-content {
+    display: flex;
+    gap: 3.2rem;
+
+    margin-bottom: 7rem;
+  }
+  
+  #aboutTeam h1 {
+    min-width: 30rem;
+
+    color: var(--tc-secondary);
+    font-size: 4.8rem;
+    line-height: 90%;
+    letter-spacing: -0.02em;
+  }
+
+  #tittle-content p {
+    font-size: 2rem;
+    line-height: 110%;
+
+    margin: 0;
+  }
+
+  .Desktop {    
+    display: flex;
+    gap: 3.2rem;
+    justify-content: center;
+  }
+
+  .Mobile {
+    display: none;
+  }
+
+  .teamSwiper-div {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .teamSwiper.Desktop {
+    max-width: 100%;
+    overflow: visible;
+  }
+  
+  .teamSwiper-div .teamSwiper-button-next,
+  .teamSwiper-div .teamSwiper-button-prev,
+  #teamPrev,
+  #teamNext,
+  #teamDot {
+    display: none;
+  }
+}
+
+@media (min-width: 1361px) {
+
+  #home {
+    min-width: 100vw;
+  }
+
+  #about {
+    min-width: 100vw;
+  }
+
+  nav {
+    left: auto;
+    right: 9.5rem;
+  }
+
+  #manyFriends {
+    min-width: 100vw;
+    padding: 2rem 11.2rem;
+  }
+
+  #aboutTeam {
+    min-width: 100vw;
+  }
+}

@@ -27,3 +27,19 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
 });
+
+const teamSwiper = new Swiper('.teamSwiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  hiddenClass: 'swiper-button-hidden',
+  // Navigation arrows
+  navigation: {
+    nextEl: '.teamSwiper-button-next',
+    prevEl: '.teamSwiper-button-prev',
+  },
+  //paginação
+  pagination: {
+    el: '.teamSwiper-pagination',
+  },
+});
