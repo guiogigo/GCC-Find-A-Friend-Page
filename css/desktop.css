@@ -257,7 +257,7 @@
   .Desktop {    
     display: flex;
     gap: 3.2rem;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .Mobile {
@@ -280,6 +280,26 @@
   #teamNext,
   #teamDot {
     display: none;
+  }
+
+  #contact {
+    width: 100vw;
+    max-width: 144rem;
+    padding: 0 11.2rem 3.2rem;
+  }
+
+  .contact-content h1 {
+    font-size: 4rem;
+    top: 20%;
+  }
+
+  .contact-content a {
+    font-size: 2.5rem;
+    top: 65%;
+  }
+
+  .contact-content a img {
+    width: 2.5rem;
   }
 }
 
@@ -305,5 +325,21 @@
 
   #aboutTeam {
     min-width: 100vw;
+  }
+
+  #contact {
+    min-width: 100vw;
+  }
+
+  .contact-content h1 {
+    font-size: 6rem;
+  }
+
+  .contact-content a {
+    font-size: 3.5rem;
+  }
+
+  .contact-content a img {
+    width: 3.5rem;
   }
 }
