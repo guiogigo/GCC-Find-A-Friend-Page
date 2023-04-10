@@ -141,8 +141,12 @@
 
   .app-bg {
     border-radius: 2rem;
+    height: 78.5rem;
     width: 58.5rem;
     margin-top: 2.7rem;
+
+    background: linear-gradient(180deg, #FDECED 0%, rgba(253, 236, 237, 0) 100%);
+    opacity: 0.5;
   }
 
   #ImgApp-Mobile {
