@@ -301,6 +301,20 @@
   .contact-content a img {
     width: 2.5rem;
   }
+
+  footer {
+    max-width: 144rem;
+    padding: 0 11.2rem;
+  }
+
+  footer img {
+    height: 5rem;
+  }
+
+  footer div p {
+    font-size: 1.6rem;
+    line-height: 110%;
+  }
 }
 
 @media (min-width: 1361px) {
@@ -341,5 +355,9 @@
 
   .contact-content a img {
     width: 3.5rem;
+  }
+
+  footer {
+    min-width: 100vw;
   }
 }

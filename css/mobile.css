@@ -118,7 +118,7 @@ body {
 }
 
 .app-bg {
-  margin-top: 3rem;
+  margin: 3rem 0 3rem;
   background-color: var(--bg-card-section);
   border-radius: 20px;
   height: 28.4rem;
@@ -127,6 +127,7 @@ body {
 
 #ImgApp-Mobile {
   position: absolute;
+  height: 34.8rem;
   max-width: 58.5rem;  
   width: 130%;
 }
@@ -369,6 +370,28 @@ body {
   width: 2rem;
 }
 
+footer {
+  max-width: 68rem;
+  height: 18.7rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+footer img {
+  height: 4rem;
+}
+
+footer div {
+  display: flex;
+  gap: 4rem;
+}
+
+
+
 /* Tablet Version */
 
 @media (min-width: 681px) {
@@ -461,7 +484,7 @@ body {
   }
 
   .container {
-    margin: 2rem 2rem 0 0;
+    margin: 0 2rem 0 0;
     padding: 8rem 2rem 2rem
   }
 
@@ -586,6 +609,8 @@ body {
   
   .description {
     text-align: justify;
+    display: flex;
+    align-items: center;
   }
   
   .teamSwiper-style {
@@ -671,6 +696,22 @@ body {
     top: 70%;
     bottom: auto;
 
+  }
+
+  footer {
+    max-width: 108rem;
+    height: 10rem;
+
+    padding: 0 2rem;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  footer div {
+    display: flex;
+    gap: 4rem;
   }
 }
 
